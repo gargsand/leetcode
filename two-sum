@@ -1,3 +1,4 @@
+// Java Solution
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] answer = new int[2];
@@ -15,3 +16,13 @@ class Solution {
     }
 }
 
+## Python Solution
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            looking_for = target - nums[i]
+            for j in range((i+1), len(nums)):
+                if nums[j] == looking_for:
+                    return [i, j]
+
+## 
